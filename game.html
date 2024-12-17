@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./words.js" defer></script>
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="game-modal" id="game-modal">
+        <div class="content">
+            <img src="#" alt="gif">
+            <h4>Game Over!</h4>
+            <p>The correct word was: <b>XYZ</b></p>
+            <button id="play-again-btn" class="play-again">Play Again</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="hangman-box">
+            <img src="#" draggable="false" alt="hangman-img" id="hangman-image">
+            <h1>Hangman Stage</h1>
+        </div>
+        <div class="game-box">
+            <ul class="word-display" id="word-display"></ul>
+            <h4 class="hint-text">Hint: <b></b></h4>
+            <h4 class="guesses-text">Incorrect guesses: <b id="guesses-text"></b></h4>
+            <div class="keyboard" id="keyboard"></div>
+        </div>
+        
+</div>
+      
+    </div>
+</body>
+</html>
